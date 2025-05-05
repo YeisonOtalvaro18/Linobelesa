@@ -1,0 +1,460 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+/*Esto sons los iconos de este link 
+https://icons.getbootstrap.com*/
+svg{
+    font-size: 100%;
+    color:  rgb(140, 16, 242)
+    
+   
+
+}
+/*cuerpo de la pagina*/
+body{
+     background-color: rgba(235, 118, 235, 0);
+     margin-left: 10%;
+     margin-right: 10%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+       
+    
+}
+/*Esta es la primera imagen el logo de linobelesa*/
+.Imagen-Ini{
+           width: 100%;
+           height: 300px;
+}
+/* El header padre de un nav*/
+header{
+     display: flex;
+     width: 100%;
+     height: 100px;
+     background-color: rgba(165, 42, 42, 0);
+}
+/*este es el nav, hijo del header el cual tine
+dos contenedores(div-nav) que contiene los links 
+de navegacion y tiene un segundo div el cual contiene el carrito y
+ el login*/
+.nav-1{
+    width: 100%;
+    height:90px;
+    background-color: rgba(245, 245, 220, 0);
+    display: flex;
+    
+
+}
+/*  etse es el div-nav anteriormente 
+mencionado*/
+
+.div-nav {
+    width: 50vw;
+    background-color: rgba(91, 91, 149, 0);
+    display: flex;
+   
+}
+/*etse es el div-nav anteriormente 
+mencionado y configura la lista*/
+.div-nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid  rgb(140, 16, 242);
+    border-radius: 40px;
+
+    height: 60px;
+    align-items: center;
+    list-style: none;
+    margin-left: 25px;
+    justify-content: space-around;
+   
+
+}
+
+
+.hover-class:hover .Link-Produ {
+    display: flex; /* Aplica el hover solo al submenú de "Productos" */
+}
+/*configura los links de inicio, 
+productos, galeria y contactanos*/
+.links-nav{
+       margin-inline-end: 10px;
+       margin-left:10px;
+       text-decoration: none;
+       font-size: 140%;
+    
+}
+
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login*/
+
+
+.div-nav1{
+    display: flex;
+    justify-content: end;
+    width: 40vw;
+    background-color: rgba(255, 140, 0, 0);
+
+
+}
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login en este caso la lista*/
+.div-nav1 ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+}
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login  ceste es para configurar los li*/
+.div-nav1 ul li{
+    margin-inline-end: 10px;
+    margin-right: 20px;
+    margin-top: 20px; 
+}
+/*configurar el boton del login*/
+
+.btn-login{
+    width: 100px;
+       padding: 10px;
+       margin-right: 10px;
+       margin-bottom: 30px;
+       font-size: 140%;
+       background-color: rgb(140, 16, 242);
+       border-radius: 40px;
+       
+}
+
+/*configurar el link del login*/
+.btn-login a{
+     color: white;
+     text-decoration: none;
+}
+/* El div que prosigue despues del header y el nav el cual
+tiene dos contenedores el del texto y la imagen*/
+.cont-princ{
+     display: flex;
+     width: 80vw;
+     background-color: rgba(222, 184, 135, 0);
+     height: 60vh;
+}
+/*primer contenedor del antes mencionado*/
+.div-cont-prin{
+    padding: 5px;
+    width: 40vw;
+    height: 60vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(121, 11, 176, 0);
+     margin-top: 20px;
+}
+.div-cont-prin ul{
+    list-style: none;
+   
+    background-color: rgba(127, 13, 203, 0.082);
+    height: 400px;
+    border-radius: 50px;
+}
+.div-cont-prin ul{
+    list-style: none;
+}
+.div-cont-prin ul li{
+   margin-top: 40px;
+   margin-inline-start: 20px;
+}
+.div-cont-prin ul li h1{
+    color: rgb(128, 15, 241);
+    font-size: 240%;
+    text-justify: inter-cluster;
+}
+.div-cont-prin ul li p{
+    color: rgb(0, 0, 0);
+    text-justify: inter-ideograph;
+}
+
+.div-cont-prin .img-lino-prin{
+       width: 400px;
+       height: 400px;
+       border-radius: 40px;
+       margin-left: 120px;
+       border-bottom: 4px solid black;
+       padding: 0;
+}
+/*Despues de terminar lo anterior sigue posteriormente
+ la galeria de mostrario*/
+
+ .title-gal{
+    color: rgb(128, 15, 241);;
+    padding: 0;
+    margin-top: 40px;
+ }
+  
+ .div-gal {
+    width: 80vw;
+    height: 60vh;
+    background-color: rgba(210, 105, 30, 0);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: 1fr; 
+}
+
+.divs-cont-ga{
+    background-color: rgba(221, 10, 10, 0);
+    color: rgb(243, 11, 11);
+    border: 3px solid rgba(136, 0, 255, 0);
+    width: 16vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.brazilian{
+    margin-left: 14px;
+      height: 300px;
+      border-radius: 10px;
+      width: 14vw;
+      border-bottom: 1px solid black;
+}
+.btn-gal-Ini{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 14vw;
+    margin-left: 14px;
+    border-radius: 40px;
+    background-color: rgb(164, 8, 255);
+}
+.btn-gal-Ini a{
+     color: white;
+     text-decoration: none;
+
+    
+}
+
+.div-eve{
+    margin-top: 30px;
+      width: 80vw;
+      height: 60vh;
+      background-color: rgba(6, 139, 255, 0);
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: 1fr;
+      padding: 0;
+}
+
+.divs-cont-eve{
+      background-color: rgba(227, 143, 34, 0);
+      border: 2px solid rgba(0, 0, 255, 0);
+      width: 26.6vw;
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      
+}
+.im-ev{
+    width: 20vw;
+    height: 40vh;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.btn-gal-Inir{
+    background-color: rgb(144, 5, 237);
+    padding:20px;
+    width: 20vw;
+    margin-left: 50px;
+    border-radius: 40px;
+
+}
+.btn-gal-Inir a{
+       font-size: 150%;
+       color: white;
+       text-decoration: none;
+       box-sizing: initial;
+}
+.div-empr{
+    padding: 0;
+    margin-top: 100px;
+    width: 80vw;
+    height: 70vh;
+    background-color: rgba(218, 165, 32, 0);
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+.div-emprs1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 6, 6, 0);
+    color: white;
+    padding: 0px;
+}
+.expe-img{
+     width: 15vw;
+     height: 30vh;
+     border-radius: 30px;
+    
+   
+}
+.div-emprs1-img{
+    display: flex;
+    justify-content:center;
+    width: 29.6vw;
+    height: 40vh;
+    background-color: rgba(0, 255, 255, 0);
+}
+.div-emprs1-h1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+}
+
+.div-emprs1-h1 h1{
+    color: rgb(132, 5, 187);
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.div-emprs1-h1 p{
+    font-size: 95%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(183, 0, 255, 0.141);
+    padding: 10px;
+    border-radius: 20px;
+}
+.div-emprs2{
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+     align-items: center;
+     background-color: rgba(137, 43, 226, 0);
+}
+.testimonio-img{
+      width: 15vw;
+      height: 30vh;
+      margin-top: -45px;
+      margin-right: 10px;
+}
+.div-emprs2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.div-emprs2 a{
+   /*text-decoration: overline;*/
+    color: darkviolet;
+
+}
+.div-emprs2  h1 a{
+    color: rgb(132, 5, 187);
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.div-emprs2  .ty{
+    margin-top: 20px;
+
+
+}
+.div-emprs3{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(19, 255, 255, 0);
+    align-items: center;
+
+}
+.chic{
+     width: 15vw;
+     height: 30vh;
+     margin-top: 30px;
+}
+.div-emprs3 h1{
+    margin-top: 55px;
+    color: rgb(132, 5, 187);
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.div-emprs3 p{
+    font-size: 95%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(183, 0, 255, 0.141);
+    padding: 10px;
+    border-radius: 20px;
+}
+     
+.fot{
+    margin-top: 160px;
+    width: 80vw;
+    height: 20vh;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgba(246, 237, 255, 0.777);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-style: none;
+     
+}
+.div-fot1{
+     width: 80vw;
+     height: 20vh;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     border-bottom: none;
+
+}
+.div-fot1 ul{
+     display: flex;
+     justify-content:space-between;
+     gap: 10px;
+     list-style: none;
+     align-items: end;
+     border-bottom: 2px solid black;
+     margin-bottom: 10px;
+   
+
+}
+.div-fot1 ul li a .svg{
+    text-decoration:overline;
+}
+.fot-2{
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: none;
+}
+
+.btnfot{
+    border-radius: 20px;
+    font-size: 140%;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(166, 16, 221);
+}
+.btnfot a{
+    font-size: 100%;
+   color: white;
+   text-decoration: none;
+}
