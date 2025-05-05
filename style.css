@@ -5,34 +5,30 @@
     
 }
 
-
-
-
 /*Esto sons los iconos de este link 
 https://icons.getbootstrap.com*/
 svg{
     font-size: 100%;
-    color:  rgb(140, 16, 242)
-    
-   
-
+    color:  rgb(140, 16, 242) 
 }
+
 /*cuerpo de la pagina*/
 body{
-     background-color: rgba(235, 118, 235, 0);
-     margin-left: 10%;
-     margin-right: 10%;
+    background-color: rgba(235, 118, 235, 0);
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: "Kanit", sans-serif;
     font-weight: 900;
     font-style: normal;
-       
     
 }
+
 /*Esta es la primera imagen el logo de linobelesa*/
 .Imagen-Ini{
            width: 100%;
            height: 300px;
 }
+
 /* El header padre de un nav*/
 header{
      display: flex;
@@ -40,6 +36,7 @@ header{
      height: 100px;
      background-color: rgba(165, 42, 42, 0);
 }
+
 /*este es el nav, hijo del header el cual tine
 dos contenedores(div-nav) que contiene los links 
 de navegacion y tiene un segundo div el cual contiene el carrito y
@@ -49,9 +46,9 @@ de navegacion y tiene un segundo div el cual contiene el carrito y
     height:90px;
     background-color: rgba(245, 245, 220, 0);
     display: flex;
-    
 
 }
+
 /*  etse es el div-nav anteriormente 
 mencionado*/
 
@@ -61,6 +58,7 @@ mencionado*/
     display: flex;
    
 }
+
 /*etse es el div-nav anteriormente 
 mencionado y configura la lista*/
 .div-nav ul {
@@ -68,20 +66,19 @@ mencionado y configura la lista*/
     justify-content: space-between;
     border: 2px solid  rgb(140, 16, 242);
     border-radius: 40px;
-
     height: 60px;
     align-items: center;
     list-style: none;
     margin-left: 25px;
     justify-content: space-around;
-   
+    background-color: white;
 
 }
-
 
 .hover-class:hover .Link-Produ {
     display: flex; /* Aplica el hover solo al submenú de "Productos" */
 }
+
 /*configura los links de inicio, 
 productos, galeria y contactanos*/
 .links-nav{
@@ -89,21 +86,34 @@ productos, galeria y contactanos*/
        margin-left:10px;
        text-decoration: none;
        font-size: 140%;
-    
+}
+.links-nav a {
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(120deg, #ff00cc 0%, #333399 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+    border-radius: 20px;
+  }
+  
+.links-nav a:hover {
+    background-size: 100% 100%;
+    color: white;
 }
 
 /*Pasamos a configurar el link del segundo div del nav
 el cual contiene los iconos y el login*/
 
-
 .div-nav1{
     display: flex;
     justify-content: end;
     width: 40vw;
-    background-color: rgba(255, 140, 0, 0);
-
+   background-color: rgba(255, 140, 0, 0);
 
 }
+
 /*Pasamos a configurar el link del segundo div del nav
 el cual contiene los iconos y el login en este caso la lista*/
 .div-nav1 ul{
@@ -111,6 +121,7 @@ el cual contiene los iconos y el login en este caso la lista*/
       justify-content: space-between;
       list-style: none;
 }
+
 /*Pasamos a configurar el link del segundo div del nav
 el cual contiene los iconos y el login  ceste es para configurar los li*/
 .div-nav1 ul li{
@@ -118,8 +129,8 @@ el cual contiene los iconos y el login  ceste es para configurar los li*/
     margin-right: 20px;
     margin-top: 20px; 
 }
-/*configurar el boton del login*/
 
+/*configurar el boton del login*/
 .btn-login{
     width: 100px;
        padding: 10px;
@@ -127,8 +138,7 @@ el cual contiene los iconos y el login  ceste es para configurar los li*/
        margin-bottom: 30px;
        font-size: 140%;
        background-color: rgb(140, 16, 242);
-       border-radius: 40px;
-       
+       border-radius: 40px;   
 }
 
 /*configurar el link del login*/
@@ -136,6 +146,7 @@ el cual contiene los iconos y el login  ceste es para configurar los li*/
      color: white;
      text-decoration: none;
 }
+
 /* El div que prosigue despues del header y el nav el cual
 tiene dos contenedores el del texto y la imagen*/
 .cont-princ{
