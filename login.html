@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="shortcut icon" href="./IMG/logolinobelesa.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Bienvenido al login</h1>
+    <img src="./IMG/Linobelesa_2-removebg-preview.png" alt="ImagenLinobelesa" class="Imagen-Ini">
+   <header>
+      <nav class="nav-1">
+         <div class="div-nav">
+            <ul>
+               <li><a href="index.html" class="links-nav">Inicio</a></li>
+               <li style="border-left: 4px solid purple;"><a href="productos.html" class="links-nav">Productos</a></li>
+               <li style="border-left: 4px solid purple;"><a href="galeria.html" class="links-nav">Galeria</a></li>
+               <li style="border-left: 4px solid purple;"><a href="contactanos.html" class="links-nav">Contactanos</a>
+               </li>
+            </ul>
+         </div>
+         <div class="div-nav1">
+            <ul>
+               <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor"
+                        class="bi bi-search-heart" viewBox="0 0 16 16">
+                        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018" />
+                        <path
+                           d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"
+                           class="ico" />
+                     </svg></a></li>
+
+               <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                           d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                           class="ico" />
+                     </svg></a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+    <div id="loginModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px; z-index: 1000;">
+        <h2>Iniciar Sesión:</h2>
+        <form id="loginForm">
+            <label for="username"><b>Usuario:</b></label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password"><b>Contraseña:</b></label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit"class="btn-login1">Inciar Sesión</button>
+            <button type="button" onclick="closeModal()"><b>Cancelar</b></button>
+            <p>¿No tienes cuenta? <a href="#" onclick="openSignupModal()" >Crear Cuenta</a></p>
+        </form>
+    </div>
+    <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;" onclick="closeModal()"></div>
+    <button onclick="openModal()">Iniciar Sesión</button>
+
+    <div id="signupModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px; z-index: 1000;">
+        <h2>Crear Cuenta:</h2>
+        <form id="signupForm">
+            <label for="newUsername"><b>Usuario:</b></label>
+            <input type="text" id="newUsername" name="newUsername" required><br><br>
+            <label for="newPassword"><b>Contraseña:</b></label>
+            <input type="password" id="newPassword" name="newPassword" required><br><br>
+            <label for="email"><b>Correo:</b></label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit"class="btn-login1">Crear Cuenta</button>
+            <button type="button" onclick="closeSignupModal()" ><b>Cancelar</b></button>
+            <p>¿Ya tienes cuenta? <a href="#" onclick="openModal()"><b>Iniciar Sesión</b></a></p>
+        </form>
+    </div>
+    <div id="signupOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;" onclick="closeSignupModal()"></div>
+    <button onclick="openSignupModal()">Crear Cuenta</button>
+   
+    <script src="app.js"></script>
 </body>
 </html>
