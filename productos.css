@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+
+/*Esto sons los iconos de este link 
+https://icons.getbootstrap.com*/
+svg{
+    font-size: 100%;
+    color:  rgb(140, 16, 242)
+}
+
+body{
+     background-color: rgba(235, 118, 235, 0);
+     margin-left: 10%;
+     margin-right: 10%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.Imagen-Ini{
+           width: 100%;
+           height: 300px;
+}
+
+/* El header padre de un nav*/
+header{
+     display: flex;
+     width: 100%;
+     height: 100px;
+     background-color: rgba(165, 42, 42, 0);
+}
+
+/*este es el nav, hijo del header el cual tine
+dos contenedores(div-nav) que contiene los links 
+de navegacion y tiene un segundo div el cual contiene el carrito y
+ el login*/
+.nav-1{
+    width: 100%;
+    height:90px;
+    background-color: rgba(245, 245, 220, 0);
+    display: flex;
+}
+
+/*  etse es el div-nav anteriormente 
+mencionado*/
+.div-nav {
+    width: 50vw;
+    background-color: rgba(91, 91, 149, 0);
+    display: flex;
+}
+
+/*etse es el div-nav anteriormente 
+mencionado y configura la lista*/
+.div-nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid  rgb(140, 16, 242);
+    border-radius: 40px;
+
+    height: 60px;
+    align-items: center;
+    list-style: none;
+    margin-left: 25px;
+    justify-content: space-around;
+}
+
+.hover-class:hover .Link-Produ {
+    display: flex; /* Aplica el hover solo al submenú de "Productos" */
+}
+
+/*configura los links de inicio, 
+productos, galeria y contactanos*/
+.links-nav{
+       margin-inline-end: 10px;
+       margin-left:10px;
+       text-decoration: none;
+       font-size: 140%;
+    
+}
+
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login*/
+.div-nav1{
+    display: flex;
+    justify-content: end;
+    width: 40vw;
+    background-color: rgba(255, 140, 0, 0);
+}
+
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login en este caso la lista*/
+.div-nav1 ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+}
+
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login  ceste es para configurar los li*/
+.div-nav1 ul li{
+    margin-inline-end: 10px;
+    margin-right: 20px;
+    margin-top: 20px; 
+}
+
+
+.btn-login{
+    width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-size: 140%;
+    background-color: rgb(140, 16, 242);
+    border-radius: 40px; 
+}
+
+
+.btn-login a{
+     color: white;
+     text-decoration: none;
+}
+
+/* Contenedor principal */
+.container {
+    width: 81vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(226, 220, 220, 0);
+    cursor: pointer;
+}
+/* Contenedor interno que organiza los productos */
+.caja2 {
+    width: 79vw;
+    display: flex; /* Asegura que los elementos estén en la misma línea */
+    justify-content: space-evenly; /* Distribuye los elementos equitativamente */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
+    border-radius: 20px;
+    line-height: 40px;
+}
+
+/* Configuración de cada producto */
+.col-12 {
+    width: 35vw; /* Para que haya dos columnas */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.card1,
+.card2, 
+.card3, 
+.card4, 
+.card5, 
+.card6 {
+    width: 35vw;
+}
+
+/* Estilo de las tarjetas */
+.card-body {
+    width: 35vw;
+    height: 48vh;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(235, 229, 223, 0.2);
+}
+
+/* Ajuste de imágenes */
+.card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-color: black;
+    border-radius: 20px;
+}
+
+.btn{
+    width: 120px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-size: 140%;
+    transition: 2s;
+    background-color: rgb(140, 16, 242);
+    border-radius: 40px; 
+    padding-left: -50px;
+}
+
+.btn:hover{
+    color: white;
+}
+
+#carrito{
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-size: 140%;
+    background-color: rgb(140, 16, 242);
+    border-radius: 40px; 
+    padding-left: -50px;
+}

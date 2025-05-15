@@ -5,6 +5,23 @@
     box-sizing: border-box;
 }
 
+
+.modalogin {
+    position: relative;
+    width: 15vh;
+    height: 5vh;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.modaluser {
+    position: relative;
+    width: 15vh;
+    height: 5vh;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
 /* Estilos para los iconos SVG */
 svg {
     font-size: 100%;

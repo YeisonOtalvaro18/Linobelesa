@@ -1,0 +1,368 @@
+css
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+/*Esto sons los iconos de este link 
+https://icons.getbootstrap.com*/
+svg{
+    font-size: 100%;
+    color:  rgb(140, 16, 242)
+    
+   
+
+}
+/*cuerpo de la pagina*/
+body{
+     background-color: rgba(235, 118, 235, 0);
+     margin-left: 10%;
+     margin-right: 10%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+       
+    
+}
+/*Esta es la primera imagen el logo de linobelesa*/
+.Imagen-Ini{
+           width: 100%;
+           height: 300px;
+}
+/* El header padre de un nav*/
+header{
+     display: flex;
+     width: 100%;
+     height: 100px;
+     background-color: rgba(165, 42, 42, 0);
+}
+/*este es el nav, hijo del header el cual tine
+dos contenedores(div-nav) que contiene los links 
+de navegacion y tiene un segundo div el cual contiene el carrito y
+ el login*/
+.nav-1{
+    width: 100%;
+    height:90px;
+    background-color: rgba(245, 245, 220, 0);
+    display: flex;
+    
+
+}
+/*  etse es el div-nav anteriormente 
+mencionado*/
+
+.div-nav {
+    width: 50vw;
+    background-color: rgba(91, 91, 149, 0);
+    display: flex;
+   
+}
+/*etse es el div-nav anteriormente 
+mencionado y configura la lista*/
+.div-nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid  rgb(140, 16, 242);
+    border-radius: 40px;
+
+    height: 60px;
+    align-items: center;
+    list-style: none;
+    margin-left: 25px;
+    justify-content: space-around;
+   
+
+}
+
+
+.hover-class:hover .Link-Produ {
+    display: flex; /* Aplica el hover solo al submenú de "Productos" */
+}
+/*configura los links de inicio, 
+productos, galeria y contactanos*/
+.links-nav{
+       margin-inline-end: 10px;
+       margin-left:10px;
+       text-decoration: none;
+       font-size: 140%;
+    
+}
+
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login*/
+
+
+.div-nav1{
+    display: flex;
+    justify-content: end;
+    width: 40vw;
+    background-color: rgba(255, 140, 0, 0);
+
+
+}
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login en este caso la lista*/
+.div-nav1 ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+}
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login  ceste es para configurar los li*/
+.div-nav1 ul li{
+    margin-inline-end: 10px;
+    margin-right: 20px;
+    margin-top: 20px; 
+}
+/*configurar el boton del login*/
+
+.btn-login{
+    width: 100px;
+       padding: 10px;
+       margin-right: 10px;
+       margin-bottom: 30px;
+       font-size: 140%;
+       background-color: rgb(140, 16, 242);
+       border-radius: 40px;
+       
+}
+
+/*configurar el link del login*/
+.btn-login a{
+     color: white;
+     text-decoration: none;
+}
+
+
+.conten-ga{
+    margin-top: 80px;
+     width: 80vw;
+     position: relative;
+     height: 40px;
+     background-color: #9b05d700;
+     margin-bottom: 80px;
+}
+
+
+.wrapper{
+     position: absolute;
+     top:70%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     width: fit-content;
+     height:auto;
+     z-index: 99999;
+     margin-bottom: 50px;
+}
+.gali{
+    width:200px;
+    height:70px;
+    background: linear-gradient(to left top, #6c0cbf 50%, #780ec8 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    border-radius: 20px;
+}
+.gali span{
+    position: absolute;
+    display: block;
+}
+.gali span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+.gali span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+.gali:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+.gali span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+  .carrusel-contenedor {
+    /*background-image: url("./IMG/Linobelesa\ 2.jpg");
+    background-position: center;
+    background-size: contain;*/
+      margin-top: 70px;
+      width: 80vw;
+      overflow: hidden;
+      margin-top: 40px;
+      border-radius: 10px;
+      background-color: rgba(131, 11, 222, 0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    }
+
+    .carrusel-imagenes {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+.carrusel-imagenes img {
+  width: 80vw;
+  max-height: 600px; /* Limita la altura */
+  object-fit: contain; /* Recorta inteligentemente para que se vea bien */
+  flex-shrink: 0;
+}
+
+    .botones {
+      display: flex;
+      justify-content: space-between;
+      width: 40vw;
+      margin-top: 10px;
+      margin-left: 20vw;
+      font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    }
+
+    .botones button {
+      flex: 1;
+      padding: 10px;
+      margin: 0 5px;
+      background-color: #9b05d7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .botones button:hover {
+      background-color: #111;
+    }
+
+
+
+
+.linobelesa-view{
+    margin-top: 70px;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 0.9fr);
+  gap: 10px;
+  
+
+}
+
+
+.img-gali{
+    width: calc(70vw/4);
+    
+}
+.img-img{
+    border: 8px solid #9b05d7;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.text-1{
+    margin-top: 50px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    padding:10px ;
+    padding-bottom: 10px;
+    background-color: #780ec8;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 40px;
+
+}
+
+#imagenes {
+  transition: transform 0.5s ease;
+  display: flex;
+}
