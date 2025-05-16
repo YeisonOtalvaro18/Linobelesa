@@ -82,6 +82,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 });
 
 // Manejador de inicio de sesión
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -102,12 +103,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         closeModal();
         clearForm('loginForm');
         
-        // Aquí podrías redirigir al usuario o cargar su perfil
-        // window.location.href = '/dashboard.html';
+        // Redirigir al usuario a index.html
+        window.location.href = 'index.html';
     } else {
         alert('Nombre de usuario o contraseña incorrectos.');
     }
 });
+
 
 // Cerrar modales con Escape
 document.addEventListener('keydown', function(event) {
@@ -116,41 +118,25 @@ document.addEventListener('keydown', function(event) {
         closeSignupModal();
     }
 });
-/*
-//Conectar a la base de datos
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const { connectDB, getDB } = require('./db');
 
-const app = express();
-const PORT = 3000;
+ 
+ document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggle-search");
+    const searchBar = document.getElementById("search-bar");
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public'))); // sirve HTML/CSS/JS
-
-// Ruta para servir el login
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'login.html'));
-});
-
-// Ruta para procesar el login
-app.post('/login', async (req, res) => {
-  const { usuario, contraseña } = req.body;
-  const db = getDB();
-  const coleccion = db.collection('usuarios');
-
-  const user = await coleccion.findOne({ usuario, contraseña });
-
-  if (user) {
-    res.send('Login exitoso');
-  } else {
-    res.send('Usuario o contraseña incorrectos');
-  }
-});
-
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`🚀 Servidor escuchando en http://localhost:${PORT}`);
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault(); 
+      searchBar.style.display = searchBar.style.display === "block" ? "none" : "block";
+    });
   });
-});*/
+
+
+  function buscarEnPagina() {
+  const input = document.getElementById("search-bar").value.toLowerCase();
+  const items = document.querySelectorAll("#lista-productos li");
+
+  items.forEach(item => {
+    const texto = item.textContent.toLowerCase();
+    item.style.display = texto.includes(input) ? "" : "none";
+  });
+}

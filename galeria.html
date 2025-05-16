@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>Document</title>
     <link rel="stylesheet" href="galeria.css">
-    <link rel="shortcut icon" href="./IMG/logolinobelesa.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <body>
+
         <img src="./IMG/Linobelesa 2.jpg" alt="ImagenLinobelesa" class="Imagen-Ini">
         <header>
             <nav class="nav-1">
@@ -20,7 +20,8 @@
                         <li><a href="index.html" class="links-nav">Inicio</a></li>
                         <li style="border-left: 4px solid purple;"><a href="productos.html"
                                 class="links-nav">Productos</a></li>
-                        <li style="border-left: 4px solid purple;"><a href="galeria.html" class="links-nav">Galeria</a>
+                        <li style="border-left: 4px solid purple;"><a href="galeria.html" class="links-nav"
+                             style="background-color: purple;color: white;width: 100%; border-radius: 40px;">Galeria</a>
                         </li>
                         <li style="border-left: 4px solid purple;"><a href="contactanos.html"
                                 class="links-nav">Contactanos</a>
@@ -75,62 +76,45 @@
 
    <div class="text-1"><h1>Hecha un vistazo a lo que podemos ofrecer</h1>
 
+
+
 </div>
 
   <div class="linobelesa-view">
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
-    <div class="img-gali">
-        <img src="./IMG/cepillos.jpg" alt="" class="img-img">
-        <button class="info">Info</button>
-    </div>
- 
-
-    
-      
+  <div class="img-gali" data-info="Cepillo de cerdas suaves ideal para peinados delicados.">
+      <img src="./IMG/cepillos.jpg" alt="Cepillo" class="img-img">
+      <button class="info">Info</button>
   </div>
+  <div class="img-gali" data-info="champu aromina bio.">
+      <img src="./IMG/CHAMPUS-AROMINA-BIO.jpg" alt="Cepillo" class="img-img">
+      <button class="info">Info</button>
+  </div>
+  <div class="img-gali" data-info="champu loreal 300k.">
+      <img src="./IMG/Loreal.jpg" alt="Cepillo" class="img-img">
+      <button class="info">Info</button>
+  </div>
+  <div class="img-gali" data-info="Cepillo de cerdas suaves ideal para peinados delicados.">
+      <img src="./IMG/cepillos.jpg" alt="Cepillo" class="img-img">
+      <button class="info">Info</button>
+  </div>
+  <div class="img-gali" data-info="Cepillo de cerdas suaves ideal para peinados delicados.">
+      <img src="./IMG/cepillos.jpg" alt="Cepillo" class="img-img">
+      <button class="info">Info</button>
+  </div>
+  <!-- Repite con diferente info por cada imagen -->
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modal-img" src="" alt="Imagen Modal">
+    <p id="modal-text"></p>
+  </div>
+</div>
+
         <script src="gal.js"></script>
+
     </body>
+
 </html>

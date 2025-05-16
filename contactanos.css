@@ -1,0 +1,195 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+/*Esto sons los iconos de este link 
+https://icons.getbootstrap.com*/
+svg{
+    font-size: 100%;
+    color:  rgb(140, 16, 242)
+    
+   
+
+}
+/*cuerpo de la pagina*/
+body{
+     background-color: rgba(235, 118, 235, 0);
+     margin-left: 10%;
+     margin-right: 10%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+       
+    
+}
+/*Esta es la primera imagen el logo de linobelesa*/
+.Imagen-Ini{
+           width: 100%;
+           height: 300px;
+}
+/* El header padre de un nav*/
+header{
+     display: flex;
+     width: 100%;
+     height: 100px;
+     background-color: rgba(165, 42, 42, 0);
+}
+/*este es el nav, hijo del header el cual tine
+dos contenedores(div-nav) que contiene los links 
+de navegacion y tiene un segundo div el cual contiene el carrito y
+ el login*/
+.nav-1{
+    width: 100%;
+    height:90px;
+    background-color: rgba(245, 245, 220, 0);
+    display: flex;
+    
+
+}
+/*  etse es el div-nav anteriormente 
+mencionado*/
+
+.div-nav {
+    width: 50vw;
+    background-color: rgba(91, 91, 149, 0);
+    display: flex;
+   
+}
+/*etse es el div-nav anteriormente 
+mencionado y configura la lista*/
+.div-nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid  rgb(140, 16, 242);
+    border-radius: 40px;
+
+    height: 60px;
+    align-items: center;
+    list-style: none;
+    margin-left: 25px;
+    justify-content: space-around;
+   
+
+}
+
+
+.hover-class:hover .Link-Produ {
+    display: flex; /* Aplica el hover solo al submenú de "Productos" */
+}
+/*configura los links de inicio, 
+productos, galeria y contactanos*/
+.links-nav{
+       margin-inline-end: 10px;
+       margin-left:10px;
+       text-decoration: none;
+       font-size: 140%;
+    
+}
+
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login*/
+
+
+.div-nav1{
+    display: flex;
+    justify-content: end;
+    width: 40vw;
+    background-color: rgba(255, 140, 0, 0);
+
+
+}
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login en este caso la lista*/
+.div-nav1 ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+}
+/*Pasamos a configurar el link del segundo div del nav
+el cual contiene los iconos y el login  ceste es para configurar los li*/
+.div-nav1 ul li{
+    margin-inline-end: 10px;
+    margin-right: 20px;
+    margin-top: 20px; 
+}
+/*configurar el boton del login*/
+
+.btn-login{
+    width: 100px;
+       padding: 10px;
+       margin-right: 10px;
+       margin-bottom: 30px;
+       font-size: 140%;
+       background-color: rgb(140, 16, 242);
+       border-radius: 40px;
+       
+}
+
+/*configurar el link del login*/
+.btn-login a{
+     color: white;
+     text-decoration: none;
+}
+.contact {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo-contacto {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(140, 16, 242, 0.4);
+}
+
+.formu {
+  background-color: #f9f3ff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(140, 16, 242, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.formu form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formu label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4a0072;
+}
+
+.formu input,
+.formu textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.formu input:focus,
+.formu textarea:focus {
+  border-color: rgb(140, 16, 242);
+  outline: none;
+}
+
+.formu input[type="submit"] {
+  background-color: rgb(140, 16, 242);
+  color:white
+
+}
