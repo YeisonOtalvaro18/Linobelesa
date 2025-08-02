@@ -1,143 +1,117 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-/*Esto sons los iconos de este link 
-https://icons.getbootstrap.com*/
-svg{
-    font-size: 100%;
-    color:  rgb(140, 16, 242)
-    
-   
-
+/* Iconos */
+svg {
+  font-size: 100%;
+  color: rgb(140, 16, 242);
 }
-/*cuerpo de la pagina*/
-body{
-     background-color: rgba(235, 118, 235, 0);
-     margin-left: 10%;
-     margin-right: 10%;
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-       
-    
-}
-/*Esta es la primera imagen el logo de linobelesa*/
-.Imagen-Ini{
-           width: 100%;
-           height: 300px;
-}
-/* El header padre de un nav*/
-header{
-     display: flex;
-     width: 100%;
-     height: 100px;
-     background-color: rgba(165, 42, 42, 0);
-}
-/*este es el nav, hijo del header el cual tine
-dos contenedores(div-nav) que contiene los links 
-de navegacion y tiene un segundo div el cual contiene el carrito y
- el login*/
-.nav-1{
-    width: 100%;
-    height:90px;
-    background-color: rgba(245, 245, 220, 0);
-    display: flex;
-    
 
+/* Cuerpo de la página */
+body {
+  background-color: rgba(235, 118, 235, 0);
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
-/*  etse es el div-nav anteriormente 
-mencionado*/
 
+/* Logo principal */
+.Imagen-Ini {
+  width: 100%;
+  height: 300px;
+}
+
+/* Header */
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(165, 42, 42, 0);
+}
+
+/* Nav */
+.nav-1 {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(245, 245, 220, 0);
+  display: flex;
+}
+
+/* Primer div del nav */
 .div-nav {
-    width: 50vw;
-    background-color: rgba(91, 91, 149, 0);
-    display: flex;
-   
+  width: 50vw;
+  background-color: rgba(91, 91, 149, 0);
+  display: flex;
 }
-/*etse es el div-nav anteriormente 
-mencionado y configura la lista*/
+
+/* Lista del nav */
 .div-nav ul {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid  rgb(140, 16, 242);
-    border-radius: 40px;
-
-    height: 60px;
-    align-items: center;
-    list-style: none;
-    margin-left: 25px;
-    justify-content: space-around;
-   
-
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid rgb(140, 16, 242);
+  border-radius: 40px;
+  height: 60px;
+  align-items: center;
+  list-style: none;
+  margin-left: 25px;
 }
 
-
-.hover-class:hover .Link-Produ {
-    display: flex; /* Aplica el hover solo al submenú de "Productos" */
-}
-/*configura los links de inicio, 
-productos, galeria y contactanos*/
-.links-nav{
-       margin-inline-end: 10px;
-       margin-left:10px;
-       text-decoration: none;
-       font-size: 140%;
-    
+/* Links */
+.links-nav {
+  margin-inline-end: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 140%;
 }
 
-/*Pasamos a configurar el link del segundo div del nav
-el cual contiene los iconos y el login*/
-
-
-.div-nav1{
-    display: flex;
-    justify-content: end;
-    width: 40vw;
-    background-color: rgba(255, 140, 0, 0);
-
-
-}
-/*Pasamos a configurar el link del segundo div del nav
-el cual contiene los iconos y el login en este caso la lista*/
-.div-nav1 ul{
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-}
-/*Pasamos a configurar el link del segundo div del nav
-el cual contiene los iconos y el login  ceste es para configurar los li*/
-.div-nav1 ul li{
-    margin-inline-end: 10px;
-    margin-right: 20px;
-    margin-top: 20px; 
-}
-/*configurar el boton del login*/
-
-.btn-login{
-    width: 100px;
-       padding: 10px;
-       margin-right: 10px;
-       margin-bottom: 30px;
-       font-size: 140%;
-       background-color: rgb(140, 16, 242);
-       border-radius: 40px;
-       
+/* Segundo div del nav */
+.div-nav1 {
+  display: flex;
+  justify-content: end;
+  width: 40vw;
+  background-color: rgba(255, 140, 0, 0);
 }
 
-/*configurar el link del login*/
-.btn-login a{
-     color: white;
-     text-decoration: none;
+/* Lista del segundo nav */
+.div-nav1 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
+
+.div-nav1 ul li {
+  margin-inline-end: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+/* Botón login */
+.btn-login {
+  width: 100px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  font-size: 140%;
+  background-color: rgb(140, 16, 242);
+  border-radius: 40px;
+}
+
+.btn-login a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ======================== */
+/* FORMULARIO DE CONTACTO  */
+/* ======================== */
 .contact {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 40px;
   justify-content: center;
@@ -145,7 +119,7 @@ el cual contiene los iconos y el login  ceste es para configurar los li*/
 }
 
 .logo-contacto {
-  width: 300px;
+  width: 200px;
   max-width: 100%;
   height: auto;
   border-radius: 20px;
@@ -154,7 +128,7 @@ el cual contiene los iconos y el login  ceste es para configurar los li*/
 
 .formu {
   background-color: #f9f3ff;
-  padding: 30px;
+  padding: 50px;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(140, 16, 242, 0.2);
   width: 100%;
@@ -188,8 +162,73 @@ el cual contiene los iconos y el login  ceste es para configurar los li*/
   outline: none;
 }
 
-.formu input[type="submit"] {
+.formu button {
+  padding: 12px;
   background-color: rgb(140, 16, 242);
-  color:white
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
+.formu button:hover {
+  background-color: #a000e0;
+}
+
+/* ============================= */
+/* INFORMACIÓN DE CONTACTO (Texto) */
+/* ============================= */
+.info-contacto {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(140, 16, 242, 0.1);
+  max-width: 400px;
+  width: 100%;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-contacto h2 {
+  margin-bottom: 15px;
+  color: #4a0072;
+  font-size: 1.5rem;
+}
+
+.info-contacto p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* RESPONSIVE: FORMULARIO + INFO */
+/* ============================= */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-contacto {
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .formu,
+  .info-contacto {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .formu button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .info-contacto {
+    text-align: center;
+  }
 }
